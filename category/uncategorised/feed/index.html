@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorised &#8211; pdf.gradex®</title>
+	<atom:link href="https://pdf.gradex.io/category/uncategorised/feed/" rel="self" type="application/rss+xml" />
+	<link>https://pdf.gradex.io</link>
+	<description>mark pdf exams and assignments using a conventional paper-like process</description>
+	<lastBuildDate>Fri, 13 Nov 2020 02:05:33 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.7</generator>
+
+<image>
+	<url>https://pdf.gradex.io/wp-content/uploads/2020/04/cropped-gradexTMfavicon2-32x32.png</url>
+	<title>Uncategorised &#8211; pdf.gradex®</title>
+	<link>https://pdf.gradex.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>®ight, what next?</title>
+		<link>https://pdf.gradex.io/ight-what-next/</link>
+					<comments>https://pdf.gradex.io/ight-what-next/#respond</comments>
+		
+		<dc:creator><![CDATA[timothy]]></dc:creator>
+		<pubDate>Fri, 13 Nov 2020 02:05:33 +0000</pubDate>
+				<category><![CDATA[Uncategorised]]></category>
+		<guid isPermaLink="false">https://pdf.gradex.io/?p=164</guid>
+
+					<description><![CDATA[This is just a &#8220;quick&#8221; update as we approach the next exam diet (Semester One, Academic Year 2020/2021 Northern Hemisphere). Short story, we&#8217;re jumping ship to the original plan. Read on for why, but first a reminder to those involved that we did a good thing, for good reasons, and time and context have changed, [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p><em>This is just a &#8220;quick&#8221; update as we approach the next exam diet (Semester One, Academic Year 2020/2021 Northern Hemisphere). Short story, we&#8217;re jumping ship to the original plan. Read on for why, but first a reminder to those involved that we did a good thing, for good reasons, and time and context have changed, not the reasons for doing what we did, when we did it. (In the same situation, I&#8217;d do the same thing again).</em></p>
+
+
+
+<p>There were a lot of really good things about doing this project the way it was done, that were specific to the situation we were in (pandemic, no access to a particular commercial tool, and the short time frame requiring a certain kind of risk management &#8211; i.e. don&#8217;t hide data in a non-human format or store it in a fragile place, so we don&#8217;t put student or staff work at risk if the tool breaks unexpectedly). But it did take a dedicated team of three of us to process the exams &#8211; often I was coding and testing features until 3:00, 4:00am or later, then they were going straight into production with one of our team using them from 7:00am or so. That was fun, but hard work. </p>
+
+
+
+<p> Looking back, I still can&#8217;t quite believe the quantity of features, or level of detail that things got to, with this project &#8230; perhaps with the lack of sleep I wasn&#8217;t forming memories too well &#8230; but if a thing needs fixing, it needs fixing properly, so you can sleep at night (even if that is just for a an hour or two before you are bug-fixing your latest release), and that means handling detail.</p>
+
+
+
+<p>One of the least rewarding aspects of this project was that the risk management strategy forced us to upload and download a lot of redundant data (all the images in the PDF exam copies had to go with the document everywhere, even if the new data added by a marker was just a few hundreds of text characters), and to add to our pain, we had decided to use a typical corporate data store that was at times, how shall we say, vexing and tiresome. There were also the inevitable human behaviour challenges &#8211; ideally, users shouldn&#8217;t need to read instructions (it&#8217;s a nice ideal, at least), nor should they be able to mess things up when they are trying to be a good actor. But relying on an eco-system like PDF, across a lot of devices, with a lot of patchy implementations of the standard was probably the thing that the biggest issue for me. With PDF there is no way you can script in the level of interactive guidance that you can with javascript on the web, and you can&#8217;t control what software a user wants to use. And that can be a major issue &#8230;.</p>
+
+
+
+<p>For example, when a user misses instructions not to do so (not really their fault, in my view), and uses the inbuilt software from a major premium brand of device supplier, which does not implement the spec correctly, and breaks your PDF parsing ability to the point it cannot actually understand the file (messing with the PDF catalogue is problematic for obvious reasons), then you have to get someone else to re-key the marking. At this point, you know you are at the limits of your ability to improve the user experience without moving away from PDF. When you are at the limit of the ecosystem like that, it&#8217;s not like more coding from you will help. Nor will tech testing, really, because how do you communicate all that to the users? It&#8217;s not like you can check the user agent and throw up some guidance on a better browser with the features you need, as you can do with the web.</p>
+
+
+
+<p>So for this project, the issues of the ecosystem reliability, lack of control of user experience, and data overhead, mean it is now time to find a way to put on a web frontend and an online backend. That&#8217;s definitely possible but &#8230; the question is &#8211; would you really want to develop a whole new tool to do that when you can just buy one?  Which is where we started &#8211; we had something we wanted to buy but couldn&#8217;t get it.</p>
+
+
+
+<p>Well, more than half a year later, we&#8217;ve finally managed to get our mitts on the commercial tool we originally wanted, and others are now taking on the process of integrating it into our procedures. I&#8217;ve stepped back from that process because I want to get back to my first love, remote labs. Which I owe a whole shed load of long-overdue development time. Thanks to a great team of people at my current place, I now have a lab again for the first time in about two years to underpin that development work (There is more information on this project coming soon, to a different blog site which I&#8217;ll link here when it is up).</p>
+
+
+
+<figure class="wp-block-gallery columns-1 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="791" src="https://pdf.gradex.io/wp-content/uploads/2020/11/labroom-1024x791.jpg" alt="" data-id="165" data-full-url="https://pdf.gradex.io/wp-content/uploads/2020/11/labroom.jpg" data-link="https://pdf.gradex.io/?attachment_id=165" class="wp-image-165" srcset="https://pdf.gradex.io/wp-content/uploads/2020/11/labroom-1024x791.jpg 1024w, https://pdf.gradex.io/wp-content/uploads/2020/11/labroom-300x232.jpg 300w, https://pdf.gradex.io/wp-content/uploads/2020/11/labroom-768x593.jpg 768w, https://pdf.gradex.io/wp-content/uploads/2020/11/labroom-1536x1186.jpg 1536w, https://pdf.gradex.io/wp-content/uploads/2020/11/labroom-1200x926.jpg 1200w, https://pdf.gradex.io/wp-content/uploads/2020/11/labroom-1980x1529.jpg 1980w, https://pdf.gradex.io/wp-content/uploads/2020/11/labroom.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li></ul></figure>
+
+
+
+<p>What does that mean for gradeX®? Well, astute Readers will have noticed the name is now registered. If you buy me a coffee post pandemic I&#8217;ll explain one of the other motivations for doing this, but mainly, it was a symbolic move to show the people that worked with me on this that what we did has laid the groundwork for some future goodness, which will remain true to the open-source, development-in-public approach of the project so far. For now, I think that future goodness needs to be something that <strong><em>adds</em></strong> to the tableau of marking codes out there, rather than <em>duplicates </em>(e.g. trying to compete with existing tools to do the same job). So, novel marking practices that are not adequately supported by existing tools are all potential candidates, with a possible aim being to support the piloting of a bunch of things related to authentic assessment and scale them up quickly if they are promising. It might be something to support some twist on evaluative judgment development, peer interaction, reflection or some other idea. I&#8217;m expecting those ideas to emerge from ongoing curriculum development efforts, and we&#8217;ll know when it is time to work on the software to support them. Meanwhile, if you find the unique combination of features in pdf.gradex to be useful, then remember, it is open-source, and remains available to use in the form that got us through >39,000 pages, although I won&#8217;t be available to hold your hand (unless you can make me an offer I can&#8217;t refuse, and chances are, you could get a commercial product for that sort of money). See the repo here <a href="https://github.com/timdrysdale/gradex-cli">https://github.com/timdrysdale/gradex-cli</a>. Enjoy! Until the next update &#8230;.</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pdf.gradex.io/ight-what-next/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>So how do I mark?</title>
+		<link>https://pdf.gradex.io/so-how-do-i-mark/</link>
+					<comments>https://pdf.gradex.io/so-how-do-i-mark/#respond</comments>
+		
+		<dc:creator><![CDATA[timothy]]></dc:creator>
+		<pubDate>Mon, 20 Apr 2020 15:29:52 +0000</pubDate>
+				<category><![CDATA[Uncategorised]]></category>
+		<guid isPermaLink="false">https://pdf.gradex.io/?p=134</guid>
+
+					<description><![CDATA[So you&#8217;ve got some exams to mark and wondering what the process is like? Here&#8217;s a quick video to give you an idea https://www.youtube.com/watch?v=jIs0a4yU2tU]]></description>
+										<content:encoded><![CDATA[
+<p>So you&#8217;ve got some exams to mark and wondering what the process is like? Here&#8217;s a quick video to give you an idea</p>
+
+
+
+<p><a href="https://www.youtube.com/watch?v=jIs0a4yU2tU">https://www.youtube.com/watch?v=jIs0a4yU2tU</a></p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1024" height="871" src="https://pdf.gradex.io/wp-content/uploads/2020/05/how-to-2-1024x871.png" alt="" class="wp-image-148" srcset="https://pdf.gradex.io/wp-content/uploads/2020/05/how-to-2-1024x871.png 1024w, https://pdf.gradex.io/wp-content/uploads/2020/05/how-to-2-300x255.png 300w, https://pdf.gradex.io/wp-content/uploads/2020/05/how-to-2-768x653.png 768w, https://pdf.gradex.io/wp-content/uploads/2020/05/how-to-2.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pdf.gradex.io/so-how-do-i-mark/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Something to try &#8230;</title>
+		<link>https://pdf.gradex.io/something-to-try/</link>
+					<comments>https://pdf.gradex.io/something-to-try/#respond</comments>
+		
+		<dc:creator><![CDATA[timothy]]></dc:creator>
+		<pubDate>Thu, 16 Apr 2020 08:08:51 +0000</pubDate>
+				<category><![CDATA[Uncategorised]]></category>
+		<guid isPermaLink="false">https://pdf.gradex.io/?p=114</guid>
+
+					<description><![CDATA[As an Academic doing marking with this system, you don&#8217;t need any software other than a PDF reader ( that can speak acroforms). Then you will just a file formatted something like this (preview below), which you then edit, save and return. The design is flexible so it can be changed to suit feedback or [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>As an Academic doing marking with this system, you don&#8217;t need any software other than a PDF reader ( that can speak acroforms). Then you will just a file formatted something like <a rel="noreferrer noopener" href="https://pdf.gradex.io/wp-content/uploads/2020/04/test-3page-mark.pdf" target="_blank">this</a> (preview below), which you then edit, save and return.</p>
+
+
+
+<p>The design is flexible so it can be changed to suit feedback or different procedures in different unis.</p>
+
+
+
+<p>I learned that a lot of PDF viewers have patchy implementations, so you get a nicer experience if you go with </p>
+
+
+
+<ul><li>Adobe Reader </li><li>Drawboard PDF (for pen display)</li><li>(your suggestions here)</li></ul>
+
+
+
+<p>Things that DON&#8217;T work, or have quirks</p>
+
+
+
+<ul><li>Microsoft Teams (you have to download to your desktop and use something else)</li><li>Chrome (can edit but not save, known chrome bug)</li><li>Edge (can edit, but does uses small letters so not as satisfying)</li></ul>
+
+
+
+<p>Here&#8217;s an original submission, with no <strong>pdf.gradex</strong><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/2122.png" alt="™" class="wp-smiley" style="height: 1em; max-height: 1em;" /> treatment. You can delete the annotations. Oops! </p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><a href="https://pdf.gradex.io/wp-content/uploads/2020/04/test-3page.pdf" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://pdf.gradex.io/wp-content/uploads/2020/04/test-script0001-729x1024.jpg" alt="" class="wp-image-115" width="371" height="521" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/test-script0001-729x1024.jpg 729w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script0001-213x300.jpg 213w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script0001-768x1079.jpg 768w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script0001-1093x1536.jpg 1093w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script0001-1200x1686.jpg 1200w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script0001.jpg 1446w" sizes="(max-width: 371px) 100vw, 371px" /></a><figcaption>Click to download the original submission (4 pages)</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large is-resized"><a href="https://pdf.gradex.io/wp-content/uploads/2020/04/test-3page-mark.pdf" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://pdf.gradex.io/wp-content/uploads/2020/04/test-script-mark0001-885x1024.jpg" alt="" class="wp-image-116" width="472" height="545" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/test-script-mark0001-885x1024.jpg 885w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script-mark0001-259x300.jpg 259w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script-mark0001-768x889.jpg 768w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script-mark0001-1327x1536.jpg 1327w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script-mark0001-1769x2048.jpg 1769w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script-mark0001-1200x1389.jpg 1200w, https://pdf.gradex.io/wp-content/uploads/2020/04/test-script-mark0001.jpg 1855w" sizes="(max-width: 472px) 100vw, 472px" /></a><figcaption>Click to download the script with a marking grid</figcaption></figure>
+
+
+
+<p>If you fancy seeing what happens to your work next, send me your edited form (and let me know if I can post here &#8230;.)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pdf.gradex.io/something-to-try/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The value of paper</title>
+		<link>https://pdf.gradex.io/the-value-of-paper/</link>
+					<comments>https://pdf.gradex.io/the-value-of-paper/#respond</comments>
+		
+		<dc:creator><![CDATA[timothy]]></dc:creator>
+		<pubDate>Thu, 16 Apr 2020 02:15:07 +0000</pubDate>
+				<category><![CDATA[Uncategorised]]></category>
+		<guid isPermaLink="false">https://pdf.gradex.io/?p=108</guid>
+
+					<description><![CDATA[Work were kind enough to give me a blog spot to talk about this project: That also provided the impetus to put up a quick demo release. I do my dev on linux, but it seems pretty standard across the people I&#8217;ve sent demos to (Canada, Scotland) that teaching offices are using Windows 10. You [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Work were kind enough to give me a <a rel="noreferrer noopener" href="https://www.teaching-matters-blog.ed.ac.uk/spotlight-on-alternative-assessment-methods-remote-exam-marking-holding-on-to-the-philosophy-of-paper/" target="_blank">blog spot t</a>o talk about this project:</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://www.teaching-matters-blog.ed.ac.uk/spotlight-on-alternative-assessment-methods-remote-exam-marking-holding-on-to-the-philosophy-of-paper/"><img loading="lazy" width="925" height="1024" src="https://pdf.gradex.io/wp-content/uploads/2020/04/blog-925x1024.png" alt="" class="wp-image-109" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/blog-925x1024.png 925w, https://pdf.gradex.io/wp-content/uploads/2020/04/blog-271x300.png 271w, https://pdf.gradex.io/wp-content/uploads/2020/04/blog-768x850.png 768w, https://pdf.gradex.io/wp-content/uploads/2020/04/blog.png 1071w" sizes="(max-width: 925px) 100vw, 925px" /></a></figure>
+
+
+
+<p>That also provided the impetus to put up a quick demo release. I do my dev on linux, but it seems pretty standard across the people I&#8217;ve sent demos to (Canada, Scotland) that teaching offices are using Windows 10. You can <a rel="noreferrer noopener" href="https://github.com/timdrysdale/gradex-overlay/releases" target="_blank">get the demo code from github.</a> If you want to experiment with your own layouts, then there is information on the editing process in the <a rel="noreferrer noopener" href="https://github.com/timdrysdale/gradex-overlay" target="_blank">demo README</a>.</p>
+
+
+
+<p>Even though I know it is a good thing in projects like this, the curse of <a rel="noreferrer noopener" href="http://YAGNI" target="_blank">YAGNI </a>is always in your mind when you are sinking time into automation processes with their usual little wrinkles that (hopefully) no-one else need ever be burdened with. It started to pay off today, already. I had some user feedback on the grid design, and within 10min of the call ending, I had the design revised and working. I&#8217;d split the question boxes to nudge freehand markers to spread their characters out so I could do OCR bounding box estimation better. Of course, I don&#8217;t use half marks, and had assumed no one else did either. Oops. I like it better this way, and we can handle the OCR by either (a) begging and pleading with markers to put a space between their handwritten characters, (b) not doing it, (c) giving in an using an external image service (some issues there). I estimate it would have been about an hour&#8217;s work to do the geometry change by writing coordinates into golang structs, and it would not have been done with such good alignment either (or the with the bordeline relief-smugness hybrid of knowing it wasn&#8217;t YAGNI). So thanks self-from-last-week. </p>
+
+
+
+<figure class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="118" height="1024" src="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-mark-flow-118x1024.png" alt="" data-id="110" data-full-url="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-mark-flow.png" data-link="https://pdf.gradex.io/?attachment_id=110" class="wp-image-110" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-mark-flow-118x1024.png 118w, https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-mark-flow-177x1536.png 177w, https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-mark-flow-236x2048.png 236w, https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-mark-flow.png 425w" sizes="(max-width: 118px) 100vw, 118px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="172" height="1024" src="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-moderate-flow-comment-active-172x1024.jpg" alt="" data-id="111" data-full-url="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-moderate-flow-comment-active-scaled.jpg" data-link="https://pdf.gradex.io/?attachment_id=111" class="wp-image-111" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-moderate-flow-comment-active-172x1024.jpg 172w, https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-moderate-flow-comment-active-258x1536.jpg 258w" sizes="(max-width: 172px) 100vw, 172px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="118" height="1024" src="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-check-flow-118x1024.jpg" alt="" data-id="112" data-full-url="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-check-flow-scaled.jpg" data-link="https://pdf.gradex.io/?attachment_id=112" class="wp-image-112" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-check-flow-118x1024.jpg 118w, https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-check-flow-177x1536.jpg 177w, https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-check-flow-236x2048.jpg 236w, https://pdf.gradex.io/wp-content/uploads/2020/04/sidebar-312pt-check-flow-scaled.jpg 295w" sizes="(max-width: 118px) 100vw, 118px" /></figure></li></ul></figure>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pdf.gradex.io/the-value-of-paper/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>An example process</title>
+		<link>https://pdf.gradex.io/an-example-process/</link>
+					<comments>https://pdf.gradex.io/an-example-process/#respond</comments>
+		
+		<dc:creator><![CDATA[timothy]]></dc:creator>
+		<pubDate>Tue, 14 Apr 2020 04:39:35 +0000</pubDate>
+				<category><![CDATA[Uncategorised]]></category>
+		<guid isPermaLink="false">https://pdf.gradex.io/?p=95</guid>
+
+					<description><![CDATA[Here&#8217;s an example of a page that has been marked by keyboard, and the moderator has found an adding error, which they&#8217;ve corrected. The checker re-keys the numbers as part of the checking procedure. Here&#8217;s a couple of the steps shown on their own, showing the moderator has only to check the page if all [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Here&#8217;s an example of a page that has been marked by keyboard, and the moderator has found an adding error, which they&#8217;ve corrected. The checker re-keys the numbers as part of the checking procedure.</p>
+
+
+
+<figure class="wp-block-gallery columns-1 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="498" height="1024" src="https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page-498x1024.png" alt="" data-id="96" data-full-url="https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page.png" data-link="https://pdf.gradex.io/?attachment_id=96" class="wp-image-96" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page-498x1024.png 498w, https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page-146x300.png 146w, https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page-768x1578.png 768w, https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page-748x1536.png 748w, https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page-997x2048.png 997w, https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page-1200x2465.png 1200w, https://pdf.gradex.io/wp-content/uploads/2020/04/example-process-with-one-page.png 1322w" sizes="(max-width: 498px) 100vw, 498px" /></figure></li></ul></figure>
+
+
+
+<p>Here&#8217;s a couple of the steps shown on their own, showing the moderator has only to check the page if all is ok, but can handle minor issues and communicate them back to the office. If there needed to be additional stages, we&#8217;ve got some other coloured &#8220;query&#8221; and &#8220;resolve&#8221; sidebars waiting in the wings.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="879" src="https://pdf.gradex.io/wp-content/uploads/2020/04/checked-2-1024x879.jpg" alt="" class="wp-image-98" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/checked-2-1024x879.jpg 1024w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-2-300x258.jpg 300w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-2-768x660.jpg 768w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-2-1536x1319.jpg 1536w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-2-2048x1759.jpg 2048w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-2-1200x1031.jpg 1200w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-2-1980x1701.jpg 1980w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="879" src="https://pdf.gradex.io/wp-content/uploads/2020/04/checked-3-1024x879.jpg" alt="" class="wp-image-97" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/checked-3-1024x879.jpg 1024w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-3-300x258.jpg 300w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-3-768x660.jpg 768w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-3-1536x1319.jpg 1536w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-3-2048x1759.jpg 2048w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-3-1200x1031.jpg 1200w, https://pdf.gradex.io/wp-content/uploads/2020/04/checked-3-1980x1701.jpg 1980w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h2>Performance</h2>
+
+
+
+<p>Since we&#8217;re going for robustness and safety, we&#8217;re rendering all the annotations at each step, exporting to an image file, reimporting that into a new page that has the marking forms added, then exporting that again (phew!) &#8211; the stuff in blue all happens in a single command. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="893" height="611" src="https://pdf.gradex.io/wp-content/uploads/2020/04/one-stage.png" alt="" class="wp-image-100" srcset="https://pdf.gradex.io/wp-content/uploads/2020/04/one-stage.png 893w, https://pdf.gradex.io/wp-content/uploads/2020/04/one-stage-300x205.png 300w, https://pdf.gradex.io/wp-content/uploads/2020/04/one-stage-768x525.png 768w" sizes="(max-width: 893px) 100vw, 893px" /></figure>
+
+
+
+<p>The process in averages around 1.4sec/page/stage at our current quality setting of 90 JPEG quality at 175dpi.</p>
+
+
+
+<pre class="wp-block-code"><code>mark             1.3s/page
+moderate-active  1.3s/page
+check            1.4s/page</code></pre>
+
+
+
+<p>The round trip to collect scripts from our exam halls easily comes in at over 45 minutes, or enough time to process about 2,000 pages. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pdf.gradex.io/an-example-process/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
