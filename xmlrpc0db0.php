@@ -2,13 +2,13 @@
 	<service>
 		<engineName>WordPress</engineName>
 		<engineLink>https://wordpress.org/</engineLink>
-		<homePageLink>https://gradex.io</homePageLink>
+		<homePageLink>https://pdf.gradex.io</homePageLink>
 		<apis>
-			<api name="WordPress" blogID="1" preferred="true" apiLink="https://gradex.io/xmlrpc.php" />
-			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://gradex.io/xmlrpc.php" />
-			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://gradex.io/xmlrpc.php" />
-			<api name="Blogger" blogID="1" preferred="false" apiLink="https://gradex.io/xmlrpc.php" />
-				<api name="WP-API" blogID="1" preferred="false" apiLink="https://gradex.io/wp-json/" />
+			<api name="WordPress" blogID="1" preferred="true" apiLink="https://pdf.gradex.io/xmlrpc.php" />
+			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://pdf.gradex.io/xmlrpc.php" />
+			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://pdf.gradex.io/xmlrpc.php" />
+			<api name="Blogger" blogID="1" preferred="false" apiLink="https://pdf.gradex.io/xmlrpc.php" />
+				<api name="WP-API" blogID="1" preferred="false" apiLink="https://pdf.gradex.io/wp-json/" />
 			</apis>
 	</service>
 </rsd>
